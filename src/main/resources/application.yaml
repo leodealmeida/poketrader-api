@@ -10,3 +10,6 @@ spring:
   flyway:
     enabled: true
     validate-on-migrate: true
+server:
+  servlet:
+    context-path: /api
