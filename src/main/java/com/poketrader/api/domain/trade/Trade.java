@@ -1,15 +1,15 @@
 package com.poketrader.api.domain.trade;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.CreatedDate;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Data
 @Entity
@@ -26,5 +26,9 @@ public class Trade {
     private Date createdAt;
 
     private boolean status;
+
+    @OneToMany(mappedBy = "trade", cascade = CascadeType.ALL)
+    @JsonBackReference
+    private List<TradedPokemon> tradedPokemon;
 
 }
