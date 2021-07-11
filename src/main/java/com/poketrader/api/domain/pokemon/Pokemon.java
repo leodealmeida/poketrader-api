@@ -1,4 +1,4 @@
-package com.poketrader.api.domain;
+package com.poketrader.api.domain.pokemon;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
