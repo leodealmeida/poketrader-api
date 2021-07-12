@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -21,7 +22,7 @@ public class TradeController {
     }
 
     @PostMapping("/trade")
-    public ResponseEntity<Long> newTrade(@RequestBody TradeCommand command) {
+    public ResponseEntity<Long> newTrade(@RequestBody @Valid TradeCommand command) {
         Long tradeId = tradeAppService.createNewTrade(command);
         return ResponseEntity.status(HttpStatus.CREATED).body(tradeId);
     }
