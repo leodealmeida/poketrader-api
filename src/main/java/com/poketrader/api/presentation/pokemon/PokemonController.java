@@ -1,6 +1,6 @@
-package com.poketrader.api.presentation;
+package com.poketrader.api.presentation.pokemon;
 
-import com.poketrader.api.application.PokemonAppService;
+import com.poketrader.api.application.pokemon.PokemonAppService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;

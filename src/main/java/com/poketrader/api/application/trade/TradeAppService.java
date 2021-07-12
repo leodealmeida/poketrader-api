@@ -4,7 +4,7 @@ import com.poketrader.api.domain.trade.Trade;
 import com.poketrader.api.domain.trade.TradeRepository;
 import com.poketrader.api.domain.trade.TradedPokemon;
 import com.poketrader.api.domain.trade.TradedPokemonRepository;
-import com.poketrader.api.presentation.PokemonResource;
+import com.poketrader.api.presentation.pokemon.PokemonResource;
 import com.poketrader.api.presentation.trade.TradeCommand;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

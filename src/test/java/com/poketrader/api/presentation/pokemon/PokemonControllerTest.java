@@ -1,9 +1,11 @@
-package com.poketrader.api.presentation;
+package com.poketrader.api.presentation.pokemon;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.poketrader.api.application.PokemonAppService;
+import com.poketrader.api.application.pokemon.PokemonAppService;
 import com.poketrader.api.domain.pokemon.PokemonRepository;
 import com.poketrader.api.infrastructure.exception.PokemonNotFoundException;
+import com.poketrader.api.presentation.pokemon.PokemonController;
+import com.poketrader.api.presentation.pokemon.PokemonResource;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;

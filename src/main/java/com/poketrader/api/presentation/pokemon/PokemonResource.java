@@ -1,4 +1,4 @@
-package com.poketrader.api.presentation;
+package com.poketrader.api.presentation.pokemon;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Value;

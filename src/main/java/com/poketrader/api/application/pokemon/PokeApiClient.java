@@ -1,6 +1,6 @@
-package com.poketrader.api.application;
+package com.poketrader.api.application.pokemon;
 
-import com.poketrader.api.presentation.PokemonResource;
+import com.poketrader.api.presentation.pokemon.PokemonResource;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

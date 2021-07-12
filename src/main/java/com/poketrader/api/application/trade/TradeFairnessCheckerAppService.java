@@ -1,6 +1,6 @@
 package com.poketrader.api.application.trade;
 
-import com.poketrader.api.presentation.PokemonResource;
+import com.poketrader.api.presentation.pokemon.PokemonResource;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

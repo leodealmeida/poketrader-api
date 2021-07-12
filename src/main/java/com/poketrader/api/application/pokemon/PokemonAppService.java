@@ -1,9 +1,9 @@
-package com.poketrader.api.application;
+package com.poketrader.api.application.pokemon;
 
 import com.poketrader.api.domain.pokemon.Pokemon;
 import com.poketrader.api.domain.pokemon.PokemonRepository;
 import com.poketrader.api.infrastructure.exception.PokemonNotFoundException;
-import com.poketrader.api.presentation.PokemonResource;
+import com.poketrader.api.presentation.pokemon.PokemonResource;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;

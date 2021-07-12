@@ -2,7 +2,7 @@ package com.poketrader.api.presentation.trade;
 
 import com.poketrader.api.application.trade.TradeAppService;
 import com.poketrader.api.domain.trade.TradeRepository;
-import com.poketrader.api.presentation.PokemonResource;
+import com.poketrader.api.presentation.pokemon.PokemonResource;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
