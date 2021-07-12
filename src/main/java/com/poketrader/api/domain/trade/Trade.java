@@ -9,6 +9,8 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.Date;
 import java.util.List;
 
@@ -26,8 +28,11 @@ public class Trade {
     @CreatedDate
     private Date createdAt;
 
+    @NotNull
     private boolean status;
 
+    @NotNull
+    @Size(min = 2)
     @OneToMany(mappedBy = "trade", cascade = CascadeType.ALL)
     @JsonManagedReference
     private List<TradedPokemon> tradedPokemon;

@@ -8,6 +8,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 
 
 @Data
@@ -21,6 +22,7 @@ public class TradedPokemon {
     @GeneratedValue
     private Long id;
 
+    @NotBlank
     private String pokemonName;
     private char side;
 
