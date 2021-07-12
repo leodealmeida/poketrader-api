@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Positive;
 
 @Data
 @Entity
@@ -17,7 +19,11 @@ public class Pokemon {
 
     @Id
     private Long id;
+
+    @NotBlank
     private String name;
+
+    @Positive
     private Integer baseExperience;
 
 }
