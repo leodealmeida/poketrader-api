@@ -1,5 +1,7 @@
 package com.poketrader.api.domain.trade;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -22,8 +24,9 @@ public class TradedPokemon {
     private String pokemonName;
     private char side;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "trade_id", nullable = false)
+    @JsonBackReference
     private Trade trade;
 
 }

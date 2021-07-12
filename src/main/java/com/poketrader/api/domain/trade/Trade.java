@@ -1,6 +1,7 @@
 package com.poketrader.api.domain.trade;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -28,7 +29,7 @@ public class Trade {
     private boolean status;
 
     @OneToMany(mappedBy = "trade", cascade = CascadeType.ALL)
-    @JsonBackReference
+    @JsonManagedReference
     private List<TradedPokemon> tradedPokemon;
 
 }
