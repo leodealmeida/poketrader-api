@@ -43,6 +43,11 @@ public class TradeAppService {
         return trade.getId();
     }
 
+    @Transactional
+    public List<Trade> getAllTrades() {
+        return tradeRepository.findAll();
+    }
+
     /* private */
     private List<TradedPokemon> extractTradedPokemon(TradeCommand cmd) {
         List<TradedPokemon> sideA = cmd.getSideA().stream()
